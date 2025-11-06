@@ -620,6 +620,7 @@ footer {
 }
 
 .modal-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -631,6 +632,10 @@ footer {
   align-items: center;
 }
 
+.modal-input {
+  display: contents;
+}
+
 .modal-content label {
   width: 100%;
   display: flex;
@@ -640,16 +645,33 @@ footer {
 
 .icon-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
+  width: 8px;
+  height: 8px;
   align-items: center;
   justify-content: center;
-  background-color: #e7e9fc;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: rgba(0, 0, 0, 0.1) 1px solid;
   border-radius: 50%;
+  background-color: #e7e9fc;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover {
+  background-color: #4d5ae5;
+  fill: #ffffff;
 }
 
 .input {
@@ -682,6 +704,27 @@ footer {
   padding: 14px 16px;
   border: #2e2f42 rgba(46, 47, 66, 0.4) 1px solid;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-phone,
+.icon-name,
+.icon-email {
+  position: absolute;
+  width: 18px;
+  height: 24px;
+  margin-left: 8px;
+  margin-top: 12px;
+  fill: black;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-phone:active,
+.icon-name:active,
+.icon-email:active {
+  fill: #4d5ae5;
 }
 
 .name:active,
@@ -704,17 +747,6 @@ footer {
   font-size: 12px;
 }
 
-.terms-privacy {
-  display: inline-flex;
-  justify-content: flex-start;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  border: #2e2f42 rgba(46, 47, 66, 0.4) 1px solid;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
 .comment-input textarea {
   width: 360px;
   padding: 14px 16px;
@@ -727,28 +759,27 @@ footer {
   resize: none;
 }
 
-.icon-phone,
-.icon-name,
-.icon-email {
-  position: absolute;
-  width: 18px;
-  height: 24px;
-  margin-left: 8px;
-  margin-top: 12px;
-  fill: black;
-}
-
-.icon-phone:active,
-.icon-name:active,
-.icon-email:active {
-  fill: #4d5ae5;
-}
 
 .checkbox-label {
+  display: flex;
+  flex-direction: inherit;
   width: 360px;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   color: #2e2f42 rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-text {
+  display: inline;
+}
+
+.terms-privacy {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: #2e2f42 rgba(46, 47, 66, 0.4) 1px solid;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .privacy:hover {
