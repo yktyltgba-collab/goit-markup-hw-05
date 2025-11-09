@@ -475,8 +475,7 @@ img {
 
 footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 135px;
   justify-content: left;
   align-items: center;
   gap: 120px;
@@ -485,7 +484,7 @@ footer {
 .footer .container {
   display: flex;
   width: 1440px;
-  justify-content: center;
+  justify-content: left;
   gap: 120px;
 }
 
