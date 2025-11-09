@@ -475,9 +475,10 @@ img {
 
 footer {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px;
   justify-content: left;
   align-items: center;
+  justify-content: center;
   gap: 120px;
 }
 
