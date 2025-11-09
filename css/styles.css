@@ -507,6 +507,16 @@ footer {
   justify-content: left;
 }
 
+.social-icons {
+  display: flex;
+  width: 208px;
+  gap: 16px;
+}
+
+.social-media {
+  width: 208px;
+}
+
 .icon-social-footer {
   display: inline-flex;
   width: 16px;
