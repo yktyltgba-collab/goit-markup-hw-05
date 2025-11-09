@@ -483,8 +483,8 @@ footer {
 
 .footer .container {
   display: flex;
-  width: 1440px;
-  justify-content: left;
+  width: 100%;
+  justify-content: center;
   gap: 120px;
 }
 
