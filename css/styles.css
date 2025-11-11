@@ -736,12 +736,11 @@ input.name,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input.name:focus,
+.name:focus,
 .phone:focus,
 .email:focus,
 .comment-input textarea:active {
   border: #4d5ae5 1px solid;
-  border-style: none;
 }
 
 .name-input:focus-within .icon-name {
